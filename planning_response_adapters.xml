@@ -1,0 +1,11 @@
+<library path="cartesian_limit_adapter">
+  <class name="cartesian_limit_adapter/LimitCartesianSpeed"
+         type="cartesian_limit_adapter::LimitCartesianSpeed"
+         base_class_type="planning_interface::PlanningResponseAdapter">
+    <description>
+      Retimes the planned path with TOPP-RA so one link stays under a linear speed and a
+      linear acceleration, on top of the joint velocity/acceleration limits. Put it after
+      AddTimeOptimalParameterization and before ValidateSolution.
+    </description>
+  </class>
+</library>

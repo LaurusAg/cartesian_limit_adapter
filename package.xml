@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>cartesian_limit_adapter</name>
+  <version>0.1.0</version>
+  <description>
+    MoveIt 2 planning response adapter that retimes a planned path (TOPP-RA) so one
+    link stays under a linear speed and a linear acceleration, on top of the joint
+    velocity and acceleration limits.
+  </description>
+  <author email="igavier@laurusag.tech">Ignacio Gavier</author>
+  <maintainer email="igavier@laurusag.tech">Ignacio Gavier</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <url type="website">https://github.com/LaurusAg/cartesian_limit_adapter</url>
+  <url type="repository">https://github.com/LaurusAg/cartesian_limit_adapter</url>
+  <url type="bugtracker">https://github.com/LaurusAg/cartesian_limit_adapter/issues</url>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>eigen</depend>
+  <depend>moveit_core</depend>
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+
+  <test_depend>ament_cmake_gtest</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
